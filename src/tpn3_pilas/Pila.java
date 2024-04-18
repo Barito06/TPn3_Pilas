@@ -115,9 +115,8 @@ public class Pila {
     }
     
     public void ordenarMayorAMenor(Pila p4, Pila p5, Pila p6){
-        for (int i = 0; i < n; i++) { // el bucle se repetira n veces
+        while (!p4.pilaVacia() && !p5.pilaVacia()) { // el bucle se repetira n veces
             
-            if(!p4.pilaVacia() && !p5.pilaVacia()){ // si alguna de las pilas esta vacia, no entrara al if/else interno
         if(p4.verElemento() > p5.verElemento()){//if/else interno
         p6.push(p5.verElemento());
         p5.pop();
@@ -130,7 +129,8 @@ public class Pila {
         p6.push(p4.verElemento());
         p4.pop();
         }
-            } else if(p4.pilaVacia()){
+        }
+            if(p4.pilaVacia()){
                while(!p5.pilaVacia()){
                 p6.push(p5.verElemento());
                 p5.pop();
@@ -141,11 +141,11 @@ public class Pila {
                 p4.pop();
                 }
                 }
-        } // fin de bucle for
+         // fin de bucle for
         //En esta parte el codigo lo que hace es ordenar intercalando los valores de mayor a menor en el arreglo 3. 
-        
-        //p6.invierteSimple(p6, p5, p4);
-         //p6.MostrarPila();
+        //reutilizo el metodo invierte simple que con tres pilas invierte la pila principal.
+        p6.invierteSimple(p6, p5, p4);
+         p6.MostrarPila();
     }
 }
 

@@ -20,7 +20,7 @@ public class TPn3_Pilas {
         p1.push(9);
         p1.push(10);
         
-        
+        //ejercicio d del practico tp3 parte 2
         p4.push(9);
         p4.push(5);
         p4.push(3);
