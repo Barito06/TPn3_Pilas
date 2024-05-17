@@ -38,7 +38,7 @@ public class TPn3_Pilas {
        //p1.invierteEficiente(p1, p2);
        p6.ordenarMayorAMenor(p4, p5, p6);
                        p6.MostrarPila();   
-
+//como coask
     }
     
 }
